@@ -3,8 +3,73 @@ body {
 }
 
 #welcome-section {
-  height: 100vh;
+  height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center; 
+}
+
+#nav {
+  background-color: white;
+  position: sticky; top: 0;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#social {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+li {
+  list-style: none;  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  justify-content: space-evenly;
+  display: flex; 
+  margin-top: -5vh;
+  padding-bottom: 5vh;
+  padding-top: 5vh; 
+}
+
+#linknav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#linknav a:hover {
+  color: grey;
 }
