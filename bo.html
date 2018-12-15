@@ -1,134 +1,138 @@
 <head>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bo.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+  <meta name="author" content="Brenton Otis">
+  <meta name="description" content="Official (and only, let's be honest) personal site for Brenton Otis.">
+  <title>Brenton Otis</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <div id="welcome-section">
-    <h1>.brenton</h1>
-    <div id="txt-gen">
-      <h2 id="text-gen">.<span class="txt-rotate" data-period="1000" data-rotate='["developer .building things","engineer .solving problems","consultant .optimizing workflows","creative .changing the world"]'</span></h2>
-    </div>
-  </div>
-  <nav id="nav">
+  <article class="welcome">
+    <h1 class="welcome_title">.brenton</h1>
+    <section class="welcome_txtgen">
+      <h2 class="welcome_txtgen--text">.<span class="welcome_txtgen--rotate" data-period="1000" data-rotate='["developer .building things","engineer .solving problems","consultant .optimizing workflows","creative .changing the world"]'></span></h2>
+    </section>
+  </article>
+  <nav class="navbar">
     <ul>
       <li>
-        <div id="linknav">
+        <span class="navbar_item">
           <a href="#about"><i class="far fa-id-card"></i>.about</a>
-        </div>
+        </span>
       </li>
       <li>
-        <div id="linknav">
+        <span class="navbar_item">
           <a href="#projects"><i class="fas fa-wrench"></i>.projects</a>
-        </div>
+        </span>
       </li>
       <li>
-        <div id="linknav">
+        <span class="navbar_item">
           <a href="#"><i class="far fa-file-alt"></i></i>.resume</a>
-        </div>
+        </span>
       </li>
       <li>
-        <div id="linknav">
+        <span class="navbar_item">
           <a href="#social"><i class="far fa-comment"></i>.social</a>
-        </div>
+        </span>
       </li>
       <li>
-        <div id="linknav">
+        <span class="navbar_item">
           <a href="#contact"><i class="far fa-envelope"></i>.contact</a>
-        </div>  
+        </span>  
       </li>
     </ul>
   </nav>
-  <div id="about" class="anchor">
-    <h2>.about</h2>
-    <div class="row">
-      <div class="column-left">
+  <article class="about">
+    <h2 class="about_title">.about</h2>
+    <section class="about_row">
+      <span class="about_column--left">
         <p>&emsp;Hi! I'm Brenton, a Customer Experience afficionado turned developer with a yearning to make the world a better place. I'm in the final year of my B.S. in I.T./Computer Programming, and I'm ready to help you make a positive impact. Let's build something truly great!</p>
         <p>&emsp;I have experience with small startups as well as established international brands, both in B2B and B2C roles, all while striving to provide the best guest experience on the planet. More recently, I've worked with the following programming languages and technologies: <i class="fab fa-java"></i>  <i class="fab fa-js-square"></i>  <i class="fab fa-python"></i> <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-git"></i> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANASURBVGhD7ZhZyA5RGIA/+75kvbBlCSlluVGKFGWJkl1RkuWKuEFJQhSRlEQSIUtIWcpeLnCBC9wjJdxQIjvPM/MdTV/f/P4sNV/OU0/fmTPvPzPvOXOW+UuRSCQS+d9ojA3SYu3SGa/hDdyB7bEm6YU7sSHOwtt4ETdib6wpNuDotJjQFCfgdVyFjbAmaIIn0V7xVVuM4rhZgWexnRW1wBKckhZL/cu/gfHoGGqZHBWcFngoLVZlJh5Li8VnJdr6eezHuWmx2LieHEmLVemI99CxVGja4ta0mMsunJoWi4tT8LS0mEsfvJUWi8skdIy4jrg45nEcx6bFYjIMl+JsfIWtsRqD8Q52TY4KiIPdKXg7rsdNmIcr/2l0f9bGiqIxBt1EOkOtxoFYF/3wIA5JjgqMibmFycNeHIpucbL7tWTH2S0t5tIdfxVTDR9oEA6vcAAGvH/leQ1rRwf02DjH1DPcjHPQ50o4h9/xKy60ogp29zc0bo8V9cSbvUdvfLdCV2xb9jJ63WzMw3LdY7QRXNk9PopuKg/gbnQN+okJGPQan6PTYJZO6MO8ReOeYH2w9Yx3Jqq8ZmAkGvMITSrLFvTcXswmErDuPP7sEQN0W/l3HmZZi9Y7q/j7FH0wu9opMYubQOttRc8Zb+vm4RpijA9USTjnw1dLREzejWUyZRugPfEz+rUW8IHtJXukLxpnIsaGcpbw8A/QGegdfsTJGN57Z5qwVvxpIoFkLBmgcgItj0iOSqX56LHd60eO5fomIs4sjgUXsvD++wrbMF77byWSYICKCWT/4D46hpy3fyeRakxEY/xo+meJiK+Wr4NTm/V+csrfSmQUGnMT3WNZvoTSCt1P6XT0nFt8x4HlOj+yDNDADPT4Q/nXmUWyiTTDl2jCtla4+SI0xkQcB6E+OA4PozFuRZxxvM8nXIDGXEDPvyn/rkHXnC/4At2TVV432QlcKRtwnl6H/ntmuRVlbC3jQvc6vTrT+VqEa9ibIRHPh/qstqrJB5wAHIOuJyHmKpqcyfRAcQXfh9m44DL8LZpjZavY2i5SJnIK/xQ3iD6kC7BvwD+hC1a2ip5B/ydl70UikUgkEolEIpFIPqXSD6gm779dkSlMAAAAAElFTkSuQmCC"></p>
-      </div>
-      <div class="column-right">
+      </span>
+      <span class="about_column--right">
         <p><img src="https://i.ibb.co/gR9fd1K/newheadshot2018-2.png" alt="newheadshot2018-2" border="0"></p>
-      </div>
-    </div>
-  </div>
-  <div id="projects" class="anchor">
-    <h1>.projects</h1>
-    <div class="projects-wrapper">
-      <article>
-    <img src="https://image.ibb.co/cjOUqn/Portfolio-Project-Cruise-On.png" alt="Portfolio-Project-Cruise-On" border="0" alt="Cruise On Screenshot">
-    <div class="text">
-      <h3>Cruise On Website</h3>
-      <p>Site for local charter van rental service; Conceptualized/built out site and created all content.</p>
-      <p>Wordpress, CSS</p>
-      <a href="http://chartervanaustin.com/" target="_blank"><button>See it live</button></a>
-    </div>
+      </span>
+    </section>
   </article>
-  <article>
-    <img src="https://i.ibb.co/YLV0Z5Z/wvr1.png" border="0" alt="Wikipedia Viewer Screenshot">
-    <div class="text">
-      <h3>Wikipedia Viewer</h3>
-      <p>Web app using Wikipedia API that searches for/displays articles via user search.</p>
-      <p>HTML, CSS, JavaScript, Wikipedia API</p>
-      <a href="https://s.codepen.io/brentonotis/debug/xjWXNm/ZoMBaKdeVgWk" target="_blank"><button>See it here</button></a>
-    </div>
+  <article class="projects">
+    <h1 class="projects_title">.projects</h1>
+    <section class="projects_first">
+      <img src="https://image.ibb.co/cjOUqn/Portfolio-Project-Cruise-On.png" alt="Portfolio-Project-Cruise-On" border="0" alt="Cruise On Screenshot">
+      <span class="projects_text">
+        <h3>Cruise On Website</h3>
+        <p>Site for local charter van rental service; Conceptualized/built out site and created all content.</p>
+        <p>Wordpress, CSS</p>
+        <a href="http://chartervanaustin.com/" target="_blank"><button>See it live</button></a>
+      </span>
+    </section>
+    <section class="projects_second">
+      <img src="https://i.ibb.co/YLV0Z5Z/wvr1.png" border="0" alt="Wikipedia Viewer Screenshot">
+      <span class="projects_text">
+        <h3>Wikipedia Viewer</h3>
+        <p>Web app using Wikipedia API that searches for/displays articles via user search.</p>
+        <p>HTML, CSS, JavaScript, Wikipedia API</p>
+        <a href="https://s.codepen.io/brentonotis/debug/xjWXNm/ZoMBaKdeVgWk" target="_blank"><button>See it here</button></a>
+      </span>
+    </section>
+    <section class="projects_third">
+      <img src="https://i.ibb.co/HCmxrTy/lwv2.png" alt="Weather Viewer Screenshot" border="0">
+      <span class="projects_text">
+        <h3>Local Weather Viewer</h3>
+        <p>Web app using geolocation and FCC API to display current user weather; toggles between F/C.</p>
+        <p>HTML, CSS, JavaScript, FCC API</p>
+        <a href="https://s.codepen.io/brentonotis/debug/PeJRaL/NjrYzqxBjpqA" target="_blank"><button>See it here</button></a>
+      </span>
+    </section>
+    <section class="projects_fourth">
+      <img src="https://i.ibb.co/N2H6qXp/brqg1.png" alt="Quote Generator Screenshot" border="0">
+      <span class="projects_text">
+        <h3>Bob's Quote Generator</h3>
+        <p>Web app that displays random (hard-coded) Bob Marley quote; Allows uers to tweet result</p>
+        <p>HTML, CSS, JavaScript</p>
+        <a href="https://s.codepen.io/brentonotis/debug/gzLvpV/mWAoNxDmeLXr" target="_blank"><button>See it here</button></a>
+      </span>
+    </section>
+    <section class="projects_fifth">
+      <img src="https://i.ibb.co/jwRVS8Y/sgp.png" alt="Student Grades Screenshot" border="0">
+      <span class="projects_text">
+        <h3>Student Grade Program</h3>
+        <p>Program that allows user to input/retrieve/modify student grades (simulates gradebook) via hashmap.</p>
+        <p>Java</p>
+        <a href="https://github.com/brentonotis/CSU_CSC372_Java/blob/master/StudentGrades.java" target="_blank"><button>Source code here</button></a>
+      </span>
+    </section>
+    <section class="projects_sixth">
+      <img src="https://i.ibb.co/dKqQDF0/fbpi.png" alt="Fantasy Baseball Screenshot" border="0">
+      <span class="projects_text">
+        <h3>Fantasy Baseball Power Rank Generator</h3>
+        <p>Program that takes in fantasy baseball statistics and generates 'power rank'.</p>
+        <p>Python</p>
+        <a href="https://github.com/brentonotis/Fantasy-Baseball-Power-Index-Generator/blob/master/fbpi.py" target="_blank"><button>Source code here</button></a>
+      </span>
+    </section>
   </article>
-  <article>
-    <img src="https://i.ibb.co/HCmxrTy/lwv2.png" alt="Weather Viewer Screenshot" border="0">
-    <div class="text">
-      <h3>Local Weather Viewer</h3>
-      <p>Web app using geolocation and FCC API to display current user weather; toggles between F/C.</p>
-      <p>HTML, CSS, JavaScript, FCC API</p>
-      <a href="https://s.codepen.io/brentonotis/debug/PeJRaL/NjrYzqxBjpqA" target="_blank"><button>See it here</button></a>
-    </div>
-  </article>
-  <article>
-    <img src="https://i.ibb.co/N2H6qXp/brqg1.png" alt="Quote Generator Screenshot" border="0">
-    <div class="text">
-      <h3>Bob's Quote Generator</h3>
-      <p>Web app that displays random (hard-coded) Bob Marley quote; Allows uers to tweet result</p>
-      <p>HTML, CSS, JavaScript</p>
-      <a href="https://s.codepen.io/brentonotis/debug/gzLvpV/mWAoNxDmeLXr" target="_blank"><button>See it here</button></a>
-    </div>
-  </article>
-  <article>
-    <img src="https://i.ibb.co/jwRVS8Y/sgp.png" alt="Student Grades Screenshot" border="0">
-    <div class="text">
-      <h3>Student Grade Program</h3>
-      <p>Program that allows user to input/retrieve/modify student grades (simulates gradebook) via hashmap.</p>
-      <p>Java</p>
-      <a href="https://github.com/brentonotis/CSU_CSC372_Java/blob/master/StudentGrades.java" target="_blank"><button>Source code here</button></a>
-    </div>
-  </article>
-  <article>
-    <img src="https://i.ibb.co/dKqQDF0/fbpi.png" alt="Fantasy Baseball Screenshot" border="0">
-    <div class="text">
-      <h3>Fantasy Baseball Power Rank Generator</h3>
-      <p>Program that takes in fantasy baseball statistics and generates 'power rank'.</p>
-      <p>Python</p>
-      <a href="https://github.com/brentonotis/Fantasy-Baseball-Power-Index-Generator/blob/master/fbpi.py" target="_blank"><button>Source code here</button></a>
-    </div>
-  </article>
-    </div>
-  </div>
-  <div id="social" class="anchor">
-    <h1>.social</h1>
+  <article class="social">
+    <h1 class="social_title">.social</h1>
     <p>Find and follow me on the interwebs:</p>
-    <div id="social-icons">
+    <span class="social_icons">
       <a href="https://github.com/brentonotis" target="_blank" id ="github"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/brentonotis/" target="_blank" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://codepen.io/brentonotis/" target="_blank" id="codepen"><i class="fab fa-codepen"></i></a>
       <a href="https://twitter.com/brentonotis" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a>
       <a href="https://www.facebook.com/profile.php?id=9219148" target="_blank" id="facebook"><i class="fab fa-facebook-square"></i></a>
-    </div>
-  </div>
-  <div id="contact" class="anchor">
-    <h1>.contact</h1>
-    <div id="contact-wrapper">
+    </span>
+  </article>
+  <article class="contact">
+    <h1 class="contact_title">.contact</h1>
+    <section class="contact_wrapper">
       <p>Feel free to reach out through any of my <a href="#social" style="color: blue;">social</a> channels, or shoot me an email below: </p>
       <a href="mailto:brenton.otis@gmail.com"><button id="email-button">Email</button></a>
-    </div>
-  </div>
+    </section>
+  </article>
 </body>
-<div class="footer">
-Developed with <i class="fas fa-hand-peace"></i><i class="fas fa-heart"></i> and <i class="fas fa-hand-rock"></i> by <a href="#welcome-section">Brenton &copy; 2018 brentonotis.com </a></p>
-<a href="https://icons8.com" style="font-size:.75em" target="_blank">Icon pack by Icons8</a>
-</div>
+<footer class="footer">
+  Developed with <i class="fas fa-hand-peace"></i><i class="fas fa-heart"></i> and <i class="fas fa-hand-rock"></i> by <a href="#welcome-section">Brenton &copy; 2018 brentonotis.com </a></p>
+  <a href="https://icons8.com" style="font-size:.75em" target="_blank">Icon pack by Icons8</a>
+</footer>
