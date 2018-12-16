@@ -40,7 +40,7 @@
 	};
 
 	window.onload = function() {
-	  let elements = document.getElementsByClassName('txt-rotate');
+	  let elements = document.getElementsByClassName('welcome_txtgen--rotate');
 	  for (let i=0; i<elements.length; i++) {
 	    let toRotate = elements[i].getAttribute('data-rotate');
 	    let period = elements[i].getAttribute('data-period');
