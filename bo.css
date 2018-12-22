@@ -1,5 +1,5 @@
 body {
-  margin: auto;
+  margin: 0;
   font-family: courier new, courier;
 }
 
@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
 }
 
 .navbar {
@@ -30,19 +31,15 @@ body {
 
 .about_title {
   font-size: 1em;
+  text-align: center;
 }
 
 .about_row {
   display: flex;
-  background-color: ;
 }
 .about_column--left {
   width: 60%;
   min-height: 100%;
-}
-
-.about_title {
-  text-align: center;
 }
 
 .about_column--right {
@@ -71,35 +68,36 @@ body {
   margin-right: 5em;
 }
 
+.projects_title {
+  font-size: 1.8em;
+  padding-top: 1em;
+  text-align: center;
+}
+
 .projects_wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
   align-items: stretch;
-  padding-bottom: 5em;
-  padding-top: 10em;
+  padding-top: 5em;
 }
 
-.projects_title {
-  padding-top: 5em;
+.projects_card img {
+  max-width: 100%;
 }
 
 .projects_card {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   border-radius: 25px;
+  padding: 0px 20px 20px;
 }
 
-.projects img {
+.projects_card img {
   max-width: 100%;
   height: 12em;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-}
-
-.projects_text {
-  padding: 0z 20px 20px;
-  text-align: center;
+  border-radius: 25px;
+  margin-top: 20px;
 }
 
 .projects_text button {
@@ -133,7 +131,6 @@ body {
 }
 
 .social_icons {
-  background-color: ;
   display: flex;
   min-height: 50vh;
   justify-content: space-evenly;
@@ -144,11 +141,17 @@ body {
 }
 
 .social_title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-bottom: 1em;
 }
 
 #github {
+  color: black;
+  background-color: white;
+  border: white;
+}
+
+#github:hover {
   color: white;
   background-color: black;
   border: white;
@@ -156,13 +159,13 @@ body {
   padding: 1.5%;
 }
 
-#github:hover {
-  color: black;
+#linkedin {
+  color: #0077B5;
   background-color: white;
   border: white;
 }
 
-#linkedin {
+#linkedin:hover {
   border: #0077B5;
   background-color: #0077B5;
   color: white;
@@ -170,13 +173,13 @@ body {
   padding: 1.5%; 
 }
 
-#linkedin:hover {
-  color: #0077B5;
+#codepen {
+  color: black;
   background-color: white;
   border: white;
 }
 
-#codepen {
+#codepen:hover {
   color: white;
   background-color: black;
   border: black;
@@ -184,13 +187,13 @@ body {
   padding: 1.5%; 
 }
 
-#codepen:hover {
-  color: black;
+#twitter {
+  color: #0084b4;
   background-color: white;
   border: white;
 }
 
-#twitter {
+#twitter:hover {
   color: white;
   background-color: #0084b4;
   border: #0084b4;
@@ -198,24 +201,18 @@ body {
   padding: 1.5%;
 }
 
-#twitter:hover {
-  color: #0084b4;
+#facebook {
+  color: #3b5998;
   background-color: white;
   border: white;
 }
 
-#facebook {
+#facebook:hover {
   color: white;
   background-color: #3b5998;
   border: #3b5998;
   border-radius: 25px!important;
   padding: 1.5%;
-}
-
-#facebook:hover {
-  color: #3b5998;
-  background-color: white;
-  border: white;
 }
 
 .contact {
@@ -231,7 +228,7 @@ body {
 }
 
 .contact_title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-bottom: 1em;
 }
 
@@ -333,7 +330,7 @@ button:focus {
   }
   .about_column--right {
     background-color: ;
-    width: 40%;
+    min-width: 40%;
     min-height: 100%;
     text-align: center;
   }
@@ -343,29 +340,7 @@ button:focus {
   }
 }
 
-@media (max-width: 900px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: ;
-    font-size: 1.5em;
-    margin-left: 5em;
-    margin-right: 5em;
-  }
-  .about_column--right img {
-    border-radius: 150px;
-    width: 75%;   
-  } 
-  .about_column--right {
-    display: flex;
-    align-items: center;
-  }
-}
-
-@media (max-width: 650px) {
+@media (max-width: 1040px) {
   .about {
     min-height: 100vh;
     max-width: 100vh;
@@ -377,6 +352,11 @@ button:focus {
     font-size: 1.3em;
     flex-wrap: wrap;
   }
+  
+  .about_title {
+    font-size: 1.4em;  
+  }
+  
   .about_column--right img {
     border-radius: 150px;
     min-height: 10em;
@@ -385,12 +365,13 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: 40vh;
     min-width: 100%;
   }
   .about_column--left {
     min-height: 40vh;
     min-width: 100%;
+    width: 100%;
   }
   .about_row {
     display: flex;
@@ -399,7 +380,7 @@ button:focus {
     max-width: 100vw;
   }
   .social_icons {
-    font-size: 1em;
+    font-size: 1.6em;
   }
   body {
     font-size: 1em;
